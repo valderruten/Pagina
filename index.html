@@ -255,5 +255,32 @@
 <!-- Scripts -->
   <script src="js/main.js"></script>
   <script src="js/animations.js"></script>
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // Fecha a partir de la cual se mostrará el audio (AAAA, MM-1, DD)
+    const fechaInicio = new Date(2025, 9, 4); // ⚠️ Mes = 0 es enero → 9 = octubre
+    const hoy = new Date();
+
+    // Selecciona el contenedor del audio
+    const audioSection = document.querySelector(".audio-player");
+
+    if (audioSection) {
+      if (hoy >= fechaInicio) {
+        // Mostrar el audio
+        audioSection.style.display = "block";
+      } else {
+        // Ocultarlo y opcionalmente mostrar mensaje
+        audioSection.style.display = "none";
+        const aviso = document.createElement("p");
+        aviso.textContent = "🎵 El audio estará disponible a partir del " + fechaInicio.toLocaleDateString();
+        aviso.style.color = "#a5b4fc";
+        aviso.style.textAlign = "center";
+        aviso.style.marginTop = "10px";
+        audioSection.parentNode.insertBefore(aviso, audioSection);
+      }
+    }
+  });
+</script>
+
 </body>
 </html>
