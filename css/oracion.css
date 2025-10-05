@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap');
+
+/* ===================================================
+   Variables globales (las que ya definiste)
+=================================================== */
+:root {
+  /* Colores principales */
+  --bg-primary: #0a0e27;
+  --bg-secondary: #0f172a;
+  --bg-gradient-start: #0b1021;
+  --bg-gradient-end: #1a1f3a;
+  --card-bg: rgba(255, 255, 255, 0.06);
+  --card-bg-hover: rgba(255, 255, 255, 0.1);
+  --card-highlight: rgba(34, 211, 238, 0.08);
+
+  --text-primary: #ffffff;
+  --text-secondary: #e5e7eb;
+  --text-muted: #cbd5e1;
+  --text-dark: #94a3b8;
+
+  --accent-primary: #22d3ee;
+  --accent-primary-dark: #06b6d4;
+  --accent-secondary: #a78bfa;
+  --accent-secondary-dark: #8b5cf6;
+  --accent-tertiary: #f472b6;
+  --accent-success: #10b981;
+
+  --gradient-primary: linear-gradient(135deg, #22d3ee 0%, #a78bfa 100%);
+  --gradient-secondary: linear-gradient(135deg, rgba(34, 211, 238, 0.2), rgba(167, 139, 250, 0.2));
+
+  --font-primary: 'Poppins', sans-serif;
+  --font-secondary: 'Merriweather', serif;
+
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4);
+  --shadow-glow: 0 0 30px rgba(34, 211, 238, 0.3);
+
+  --transition-base: 0.3s ease;
+}
+
+/* ===================================================
+   Base del Documento
+=================================================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-family: var(--font-primary);
+  background: linear-gradient(180deg, var(--bg-gradient-start), var(--bg-gradient-end));
+  color: var(--text-primary);
+  line-height: 1.7;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+}
+
+/* ===================================================
+   Encabezado
+=================================================== */
+.header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  animation: fadeInDown 0.8s ease;
+}
+
+.icon-wrapper {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.header h1 {
+  font-size: 2rem;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 700;
+}
+
+.subtitle {
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
+/* ===================================================
+   Contenido de la oración
+=================================================== */
+.prayer-content {
+  background: var(--card-bg);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  box-shadow: var(--shadow-md);
+  backdrop-filter: blur(10px);
+  transition: background var(--transition-base);
+}
+
+.prayer-content:hover {
+  background: var(--card-bg-hover);
+}
+
+.prayer-intro {
+  font-family: var(--font-secondary);
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: var(--accent-primary);
+  margin-bottom: 0.5rem;
+}
+
+.highlight-section {
+  background: var(--card-highlight);
+  border-left: 4px solid var(--accent-primary);
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: var(--radius-md);
+}
+
+.decorative-line {
+  border: none;
+  height: 1px;
+  background: var(--accent-secondary);
+  opacity: 0.3;
+  margin: 1.5rem 0;
+}
+
+.invocation-box {
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: var(--radius-md);
+  padding: 1rem;
+  margin-top: 1.5rem;
+}
+
+.invocation-note {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-top: 0.3rem;
+}
+
+.intention-space {
+  background: var(--card-bg-hover);
+  padding: 1rem;
+  margin-top: 0.8rem;
+  border-radius: var(--radius-md);
+  min-height: 80px;
+  font-style: italic;
+  cursor: text;
+}
+
+.intention-space:focus-within {
+  outline: 2px solid var(--accent-primary);
+}
+
+.cross {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--accent-secondary);
+  margin: 2rem 0 0.5rem;
+}
+
+.amen {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--accent-success);
+}
+
+/* ===================================================
+   Firma
+=================================================== */
+.signature {
+  text-align: center;
+  margin-top: 2.5rem;
+  animation: fadeInUp 1s ease;
+}
+
+.signature .team {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.signature .motto {
+  margin-top: 0.3rem;
+  color: var(--accent-secondary);
+  font-style: italic;
+}
+
+/* ===================================================
+   Botones de Navegación
+=================================================== */
+.navigation-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2.5rem;
+  flex-wrap: wrap;
+}
+
+button, a.btn-home {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.8rem 1.3rem;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.btn-close {
+  background: var(--accent-tertiary);
+  color: #fff;
+  border: none;
+}
+
+.btn-home {
+  background: var(--accent-primary);
+  color: #fff;
+}
+
+button:hover, a.btn-home:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-glow);
+}
+
+/* ===================================================
+   Animaciones
+=================================================== */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===================================================
+   Responsividad
+=================================================== */
+@media (max-width: 600px) {
+  .container {
+    padding: 1.5rem;
+  }
+
+  .header h1 {
+    font-size: 1.6rem;
+  }
+
+  .prayer-content {
+    padding: 1.2rem;
+  }
+
+  .navigation-buttons {
+    flex-direction: column;
+  }
+}

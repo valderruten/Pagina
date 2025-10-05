@@ -1,0 +1,14 @@
+
+@import url('variables.css');
+@import url('reset.css');
+@import url('animations.css');
+@import url('components.css');
+
+body {
+  font-family: var(--font-primary);
+  color: var(--text-secondary);
+  background: linear-gradient(180deg, var(--bg-gradient-start), var(--bg-gradient-end));
+  line-height: 1.6;
+  min-height: 100vh;
+  overflow-x: hidden;
+}

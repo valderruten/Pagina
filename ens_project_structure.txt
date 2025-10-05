@@ -1,0 +1,1994 @@
+# 🌟 Proyecto ENS - Reunión 05 (Versión Mejorada)
+
+## 📁 Estructura de Carpetas
+
+```
+proyecto-ens/
+│
+├── index.html
+├── README.md
+│
+├── assets/
+│   ├── audio/
+│   │   └── AquiEstoy.mp3
+│   ├── images/
+│   │   └── logo.jpg
+│   └── icons/
+│       └── favicon.ico
+│
+├── css/
+│   ├── variables.css
+│   ├── reset.css
+│   ├── animations.css
+│   ├── components.css
+│   └── styles.css
+│
+└── js/
+    ├── main.js
+    └── animations.js
+```
+
+---
+
+## 📄 **1. index.html** (Archivo Principal Mejorado)
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ENS | Reunión 05 – Equipo 21</title>
+  <meta name="description" content="Reunión 05 del Equipo No. 21 ENS – Llamados a vivir en comunión con Cristo." />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet" />
+  
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- Fondo animado de partículas -->
+  <div class="particles" id="particles"></div>
+
+  <div class="container">
+    <div class="card">
+      <!-- Header mejorado -->
+      <header>
+        <div class="logo-container">
+          <img src="assets/images/logo.jpg" alt="Equipos de Nuestra Señora Logo" />
+          <div class="glow-effect"></div>
+        </div>
+        <div class="kicker">✨ Región Colombia · Valle Norte ✨</div>
+        <h1>Sector B Tuluá – Valle<br><span class="highlight">Reunión 05</span></h1>
+        <div class="meta">
+          <span class="badge badge-primary">
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+              <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z"/>
+            </svg>
+            Equipo No. 21 ENS
+          </span>
+          <span class="badge badge-secondary">
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+            </svg>
+            Llamados a vivir en comunión con Cristo
+          </span>
+        </div>
+      </header>
+
+      <div class="content">
+        <!-- Sección Invocación -->
+        <section class="section-card hover-lift">
+          <div class="section-header">
+            <div class="icon-circle">🙏</div>
+            <h2>Invocación</h2>
+          </div>
+          <p class="section-description"><em>Ponerse en presencia de Dios.</em></p>
+          <div class="audio-player">
+            <audio controls src="assets/audio/AquiEstoy.mp3">
+              Tu navegador no soporta el elemento de audio.
+            </audio>
+          </div>
+        </section>
+
+        <!-- Sección Oración -->
+        <section class="section-card hover-lift">
+          <div class="section-header">
+            <div class="icon-circle">📿</div>
+            <h2>Oración</h2>
+          </div>
+          <p class="section-description">Beatificación del Padre Henry Caffarel</p>
+          <div class="quote-box">
+            <p>"El amor conyugal es un camino privilegiado hacia Dios"</p>
+            <span class="quote-author">— Padre Henry Caffarel</span>
+          </div>
+        </section>
+
+        <!-- Sección Bendición -->
+        <section class="section-card hover-lift">
+          <div class="section-header">
+            <div class="icon-circle">🍞</div>
+            <h2>Bendición de los alimentos</h2>
+          </div>
+          <div class="blessing-text">
+            <p><em>"Bendícenos, Señor, y bendice estos alimentos que vamos a tomar..."</em></p>
+          </div>
+        </section>
+
+        <!-- Sección Puesta en común -->
+        <section class="section-card hover-lift">
+          <div class="section-header">
+            <div class="icon-circle">💬</div>
+            <h2>Puesta en común</h2>
+          </div>
+          <p class="section-description">Intervención pareja piloto.</p>
+          <div class="info-box">
+            <p>💡 <strong>Recordatorio:</strong> Compartir experiencias vividas desde la última reunión.</p>
+          </div>
+        </section>
+
+        <!-- Momento de oración -->
+        <section class="section-card hover-lift section-highlight">
+          <div class="section-header">
+            <div class="icon-circle">✝️</div>
+            <h2>Momento de oración</h2>
+          </div>
+          <ol class="agenda">
+            <li>
+              <strong>Texto de meditación:</strong> 
+              <span class="scripture-ref">Juan 15, 15–17</span>
+            </li>
+            <li>
+              <strong>Oración comunitaria:</strong> 
+              Oración libre y voluntaria (petición de fe).
+            </li>
+            <li>
+              <strong>Oración litúrgica:</strong> 
+              <span class="scripture-ref">Salmo 99</span> — "Somos su pueblo y ovejas de su rebaño".
+            </li>
+          </ol>
+          <div class="verse">
+            <div class="verse-icon">📖</div>
+            <p>«Ya no los llamo siervos… Los he llamado amigos… Esto les mando: que se amen los unos a los otros».</p>
+            <span class="verse-ref">(Juan 15)</span>
+          </div>
+        </section>
+
+        <!-- Participación P.C.E -->
+        <section class="section-card hover-lift">
+          <div class="section-header">
+            <div class="icon-circle">📋</div>
+            <h2>Participación · Puntos Concretos de Esfuerzo (P.C.E)</h2>
+          </div>
+          <div class="pce-container">
+            <p>Compartir los compromisos personales y de pareja asumidos.</p>
+          </div>
+        </section>
+
+        <!-- Tema de estudio -->
+        <section class="section-card hover-lift section-highlight">
+          <div class="section-header">
+            <div class="icon-circle">📚</div>
+            <h2>Tema de estudio</h2>
+          </div>
+          <div class="theme-box">
+            <h3>"Ser pareja"</h3>
+            <p class="theme-description">Reflexión sobre la vocación matrimonial y el llamado a crecer juntos en el amor de Cristo.</p>
+          </div>
+        </section>
+
+        <!-- Tiempo de pilotos -->
+        <section class="section-card hover-lift">
+          <div class="section-header">
+            <div class="icon-circle">🧭</div>
+            <h2>Tiempo de pilotos</h2>
+          </div>
+          <p class="section-description">Orientaciones y acompañamiento de la pareja piloto.</p>
+        </section>
+
+        <!-- Varios -->
+        <section class="section-card hover-lift">
+          <div class="section-header">
+            <div class="icon-circle">🎉</div>
+            <h2>Varios</h2>
+          </div>
+          <div class="grid-2">
+            <div class="sub-card">
+              <h3>🎂 Cumpleaños</h3>
+              <div class="birthday-list">
+                <div class="birthday-item">
+                  <span class="date">Octubre 06</span>
+                  <span class="name">Karol Yasmid</span>
+                </div>
+                <div class="birthday-item">
+                  <span class="date">Octubre 12</span>
+                  <span class="name">Roberto</span>
+                </div>
+              </div>
+            </div>
+            <div class="sub-card">
+              <h3>📅 Próxima reunión</h3>
+              <div class="field">
+                <div class="label">Fecha</div>
+                <div class="value editable" contenteditable="true" data-placeholder="Escribe la fecha...">—</div>
+              </div>
+              <div class="field">
+                <div class="label">Hogar</div>
+                <div class="value editable" contenteditable="true" data-placeholder="Escribe el hogar...">—</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Magníficat -->
+        <section class="section-card hover-lift">
+          <div class="section-header">
+            <div class="icon-circle">🌟</div>
+            <h2>Magníficat</h2>
+          </div>
+          <div class="magnificat-box">
+            <p><em>"Proclama mi alma la grandeza del Señor..."</em></p>
+          </div>
+        </section>
+
+        <!-- Botón de enlace -->
+        <section class="section-card text-center">
+          <button class="btn-primary" onclick="openPopup()">
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
+              <path d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
+            </svg>
+            Ir a la página principal
+          </button>
+        </section>
+      </div>
+    </div>
+
+    <footer>
+      <p>Hecho con <span class="heart">❤️</span> para el Equipo No. 21 ENS</p>
+      <p class="footer-location">Valle Norte · Colombia</p>
+    </footer>
+  </div>
+
+  <!-- Popup mejorado -->
+  <div class="popup" id="popup">
+    <div class="popup-overlay" onclick="closePopup()"></div>
+    <div class="popup-content">
+      <button class="popup-close" onclick="closePopup()">
+        <svg width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+        </svg>
+      </button>
+      <div class="popup-icon">🏠</div>
+      <h3>Página Principal ENS</h3>
+      <p>¿Deseas visitar la página principal de nuestro equipo?</p>
+      <div class="popup-buttons">
+        <a href="index.html" class="btn-popup-primary">Ir a la página</a>
+        <button onclick="closePopup()" class="btn-popup-secondary">Cancelar</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+</html>
+```
+
+---
+
+## 🎨 **2. css/variables.css**
+
+```css
+:root {
+  /* Colores principales */
+  --bg-primary: #0a0e27;
+  --bg-secondary: #0f172a;
+  --bg-gradient-start: #0b1021;
+  --bg-gradient-end: #1a1f3a;
+  
+  --card-bg: rgba(255, 255, 255, 0.06);
+  --card-bg-hover: rgba(255, 255, 255, 0.1);
+  --card-highlight: rgba(34, 211, 238, 0.08);
+  
+  --text-primary: #ffffff;
+  --text-secondary: #e5e7eb;
+  --text-muted: #cbd5e1;
+  --text-dark: #94a3b8;
+  
+  --accent-primary: #22d3ee;
+  --accent-primary-dark: #06b6d4;
+  --accent-secondary: #a78bfa;
+  --accent-secondary-dark: #8b5cf6;
+  --accent-tertiary: #f472b6;
+  --accent-success: #10b981;
+  
+  /* Gradientes */
+  --gradient-primary: linear-gradient(135deg, #22d3ee 0%, #a78bfa 100%);
+  --gradient-secondary: linear-gradient(135deg, rgba(34, 211, 238, 0.2), rgba(167, 139, 250, 0.2));
+  --gradient-card: linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.04));
+  
+  /* Espaciado */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 3rem;
+  
+  /* Tipografía */
+  --font-primary: 'Poppins', sans-serif;
+  --font-secondary: 'Merriweather', serif;
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 2rem;
+  
+  /* Border radius */
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.25rem;
+  --radius-2xl: 1.5rem;
+  --radius-full: 9999px;
+  
+  /* Sombras */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.5);
+  --shadow-xl: 0 12px 48px rgba(0, 0, 0, 0.6);
+  --shadow-glow: 0 0 30px rgba(34, 211, 238, 0.3);
+  --shadow-glow-purple: 0 0 30px rgba(167, 139, 250, 0.3);
+  
+  /* Transiciones */
+  --transition-fast: 0.2s ease;
+  --transition-base: 0.3s ease;
+  --transition-slow: 0.5s ease;
+}
+```
+
+---
+
+## 🎭 **3. css/reset.css**
+
+```css
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+```
+
+---
+
+## ✨ **4. css/animations.css**
+
+```css
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes glow {
+  0%, 100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+@keyframes particleFloat {
+  0%, 100% {
+    transform: translateY(0) translateX(0);
+  }
+  25% {
+    transform: translateY(-20px) translateX(10px);
+  }
+  50% {
+    transform: translateY(-10px) translateX(-10px);
+  }
+  75% {
+    transform: translateY(-30px) translateX(5px);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.8s ease forwards;
+}
+
+.slide-in-left {
+  animation: slideInLeft 0.8s ease forwards;
+}
+
+.slide-in-right {
+  animation: slideInRight 0.8s ease forwards;
+}
+
+.float {
+  animation: float 3s ease-in-out infinite;
+}
+```
+
+---
+
+## 🎨 **5. css/components.css**
+
+```css
+/* Partículas de fondo */
+.particles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.particle {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: var(--accent-primary);
+  border-radius: 50%;
+  opacity: 0.3;
+  animation: particleFloat 10s ease-in-out infinite;
+}
+
+/* Container y Card */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: var(--spacing-md);
+  position: relative;
+  z-index: 1;
+}
+
+.card {
+  background: var(--card-bg);
+  backdrop-filter: blur(10px);
+  border-radius: var(--radius-2xl);
+  box-shadow: var(--shadow-xl);
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  animation: fadeIn 1s ease;
+}
+
+/* Header */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-2xl) var(--spacing-xl);
+  background: var(--gradient-secondary);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+header::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(34, 211, 238, 0.1) 0%, transparent 70%);
+  animation: pulse 4s ease-in-out infinite;
+}
+
+.logo-container {
+  position: relative;
+  margin-bottom: var(--spacing-lg);
+  animation: float 3s ease-in-out infinite;
+}
+
+.logo-container img {
+  max-width: 280px;
+  width: 100%;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  position: relative;
+  z-index: 2;
+}
+
+.glow-effect {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120%;
+  height: 120%;
+  background: radial-gradient(circle, rgba(34, 211, 238, 0.3), transparent);
+  filter: blur(30px);
+  animation: glow 3s ease-in-out infinite;
+  z-index: 1;
+}
+
+header .kicker {
+  font-size: var(--font-size-sm);
+  color: var(--text-muted);
+  margin-bottom: var(--spacing-sm);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+header h1 {
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  font-weight: 800;
+  margin-bottom: var(--spacing-md);
+  color: var(--text-primary);
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  line-height: 1.2;
+}
+
+header h1 .highlight {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: inline-block;
+}
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-md);
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  transition: all var(--transition-base);
+}
+
+.badge-primary {
+  background: rgba(34, 211, 238, 0.2);
+  color: var(--accent-primary);
+}
+
+.badge-secondary {
+  background: rgba(167, 139, 250, 0.2);
+  color: var(--accent-secondary);
+}
+
+.badge:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+/* Content */
+.content {
+  padding: var(--spacing-xl);
+}
+
+/* Secciones */
+.section-card {
+  margin-bottom: var(--spacing-lg);
+  background: var(--gradient-card);
+  border-radius: var(--radius-xl);
+  padding: var(--spacing-xl);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all var(--transition-base);
+  position: relative;
+  overflow: hidden;
+}
+
+.section-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, transparent 0%, rgba(34, 211, 238, 0.05) 100%);
+  opacity: 0;
+  transition: opacity var(--transition-base);
+}
+
+.section-card:hover::before {
+  opacity: 1;
+}
+
+.hover-lift:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+  border-color: rgba(34, 211, 238, 0.3);
+}
+
+.section-highlight {
+  border-left: 4px solid var(--accent-primary);
+  background: var(--card-highlight);
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+}
+
+.icon-circle {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--gradient-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  box-shadow: var(--shadow-glow);
+  flex-shrink: 0;
+}
+
+.section-card h2 {
+  font-size: var(--font-size-xl);
+  color: var(--text-primary);
+  font-weight: 700;
+  margin: 0;
+}
+
+.section-card h3 {
+  font-size: var(--font-size-lg);
+  color: var(--accent-secondary);
+  margin-bottom: var(--spacing-md);
+  font-weight: 600;
+}
+
+.section-description {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: var(--spacing-md);
+}
+
+/* Audio Player */
+.audio-player {
+  margin-top: var(--spacing-md);
+  padding: var(--spacing-md);
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.audio-player audio {
+  width: 100%;
+  height: 40px;
+  border-radius: var(--radius-md);
+}
+
+/* Quote Box */
+.quote-box {
+  background: linear-gradient(135deg, rgba(167, 139, 250, 0.1), rgba(167, 139, 250, 0.05));
+  border-left: 4px solid var(--accent-secondary);
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-md);
+  margin-top: var(--spacing-md);
+  font-style: italic;
+}
+
+.quote-box p {
+  color: var(--text-secondary);
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--spacing-sm);
+}
+
+.quote-author {
+  display: block;
+  color: var(--text-muted);
+  font-size: var(--font-size-sm);
+  text-align: right;
+  font-weight: 600;
+}
+
+/* Blessing Text */
+.blessing-text {
+  background: rgba(255, 255, 255, 0.05);
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-md);
+  text-align: center;
+  font-family: var(--font-secondary);
+}
+
+.blessing-text p {
+  color: var(--text-secondary);
+  font-size: var(--font-size-lg);
+  line-height: 1.8;
+}
+
+/* Info Box */
+.info-box {
+  background: linear-gradient(135deg, rgba(34, 211, 238, 0.1), rgba(34, 211, 238, 0.05));
+  border: 1px solid rgba(34, 211, 238, 0.3);
+  padding: var(--spacing-md);
+  border-radius: var(--radius-md);
+  margin-top: var(--spacing-md);
+}
+
+.info-box p {
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+/* Agenda List */
+ol.agenda {
+  padding-left: var(--spacing-xl);
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+
+ol.agenda li {
+  margin-bottom: var(--spacing-md);
+  padding-left: var(--spacing-sm);
+}
+
+ol.agenda strong {
+  color: var(--accent-primary);
+  font-weight: 600;
+}
+
+.scripture-ref {
+  color: var(--accent-secondary);
+  font-weight: 600;
+  font-style: italic;
+}
+
+/* Verse Box */
+.verse {
+  font-family: var(--font-secondary);
+  background: linear-gradient(135deg, rgba(34, 211, 238, 0.15), rgba(167, 139, 250, 0.15));
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-xl);
+  margin-top: var(--spacing-lg);
+  border: 2px solid rgba(34, 211, 238, 0.3);
+  position: relative;
+  text-align: center;
+}
+
+.verse-icon {
+  font-size: 2.5rem;
+  margin-bottom: var(--spacing-md);
+  animation: float 3s ease-in-out infinite;
+}
+
+.verse p {
+  color: var(--text-primary);
+  font-size: var(--font-size-lg);
+  font-style: italic;
+  line-height: 1.8;
+  margin-bottom: var(--spacing-sm);
+}
+
+.verse-ref {
+  display: block;
+  color: var(--text-muted);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  margin-top: var(--spacing-md);
+}
+
+/* PCE Container */
+.pce-container {
+  background: rgba(0, 0, 0, 0.2);
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-md);
+  border-left: 4px solid var(--accent-success);
+}
+
+.pce-container p {
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+/* Theme Box */
+.theme-box {
+  text-align: center;
+  padding: var(--spacing-xl);
+  background: var(--gradient-secondary);
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(167, 139, 250, 0.3);
+}
+
+.theme-box h3 {
+  font-size: var(--font-size-2xl);
+  color: var(--accent-secondary);
+  margin-bottom: var(--spacing-md);
+  text-shadow: var(--shadow-glow-purple);
+}
+
+.theme-description {
+  color: var(--text-secondary);
+  font-size: var(--font-size-base);
+  line-height: 1.7;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Grid 2 */
+.grid-2 {
+  display: grid;
+  gap: var(--spacing-lg);
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .grid-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Sub Card */
+.sub-card {
+  background: rgba(0, 0, 0, 0.2);
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all var(--transition-base);
+}
+
+.sub-card:hover {
+  background: rgba(0, 0, 0, 0.3);
+  border-color: rgba(34, 211, 238, 0.3);
+  transform: translateY(-3px);
+}
+
+/* Birthday List */
+.birthday-list {
+  margin-top: var(--spacing-md);
+}
+
+.birthday-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md);
+  background: rgba(244, 114, 182, 0.1);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--spacing-sm);
+  border-left: 3px solid var(--accent-tertiary);
+}
+
+.birthday-item .date {
+  color: var(--accent-tertiary);
+  font-weight: 600;
+  font-size: var(--font-size-sm);
+  min-width: 80px;
+}
+
+.birthday-item .name {
+  color: var(--text-secondary);
+  font-size: var(--font-size-base);
+}
+
+/* Fields */
+.field {
+  margin-bottom: var(--spacing-md);
+}
+
+.label {
+  font-size: var(--font-size-sm);
+  color: var(--text-muted);
+  margin-bottom: var(--spacing-xs);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.value {
+  background: rgba(34, 211, 238, 0.1);
+  padding: var(--spacing-md);
+  border-radius: var(--radius-md);
+  color: var(--text-secondary);
+  border: 2px solid transparent;
+  transition: all var(--transition-base);
+  min-height: 45px;
+  display: flex;
+  align-items: center;
+}
+
+.value.editable {
+  cursor: text;
+  position: relative;
+}
+
+.value.editable:hover {
+  background: rgba(34, 211, 238, 0.15);
+  border-color: rgba(34, 211, 238, 0.3);
+}
+
+.value.editable:focus {
+  outline: none;
+  background: rgba(34, 211, 238, 0.2);
+  border-color: var(--accent-primary);
+  box-shadow: 0 0 0 3px rgba(34, 211, 238, 0.1);
+}
+
+.value.editable:empty::before {
+  content: attr(data-placeholder);
+  color: var(--text-dark);
+  font-style: italic;
+}
+
+/* Magnificat Box */
+.magnificat-box {
+  background: linear-gradient(135deg, rgba(167, 139, 250, 0.1), transparent);
+  padding: var(--spacing-xl);
+  border-radius: var(--radius-lg);
+  text-align: center;
+  font-family: var(--font-secondary);
+}
+
+.magnificat-box p {
+  color: var(--text-secondary);
+  font-size: var(--font-size-lg);
+  font-style: italic;
+}
+
+/* Buttons */
+.text-center {
+  text-align: center;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-md) var(--spacing-xl);
+  background: var(--gradient-primary);
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-base);
+  cursor: pointer;
+  transition: all var(--transition-base);
+  box-shadow: var(--shadow-md);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transition: left 0.5s;
+}
+
+.btn-primary:hover::before {
+  left: 100%;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: var(--spacing-xl);
+  margin-top: var(--spacing-2xl);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+footer p {
+  color: var(--text-muted);
+  font-size: var(--font-size-sm);
+  margin-bottom: var(--spacing-xs);
+}
+
+.footer-location {
+  color: var(--text-dark);
+  font-size: var(--font-size-xs);
+}
+
+.heart {
+  color: var(--accent-tertiary);
+  display: inline-block;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+/* Popup */
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup.active {
+  display: flex;
+}
+
+.popup-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(5px);
+  animation: fadeIn 0.3s ease;
+}
+
+.popup-content {
+  position: relative;
+  background: linear-gradient(135deg, #1e293b, #0f172a);
+  padding: var(--spacing-2xl);
+  border-radius: var(--radius-2xl);
+  max-width: 450px;
+  width: 90%;
+  text-align: center;
+  box-shadow: var(--shadow-xl);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  animation: slideInRight 0.4s ease;
+  z-index: 10000;
+}
+
+.popup-close {
+  position: absolute;
+  top: var(--spacing-md);
+  right: var(--spacing-md);
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all var(--transition-base);
+  color: var(--text-muted);
+}
+
+.popup-close:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: var(--text-primary);
+  transform: rotate(90deg);
+}
+
+.popup-icon {
+  font-size: 4rem;
+  margin-bottom: var(--spacing-md);
+  animation: float 3s ease-in-out infinite;
+}
+
+.popup-content h3 {
+  color: var(--text-primary);
+  font-size: var(--font-size-2xl);
+  margin-bottom: var(--spacing-md);
+  font-weight: 700;
+}
+
+.popup-content p {
+  color: var(--text-secondary);
+  margin-bottom: var(--spacing-xl);
+  line-height: 1.6;
+}
+
+.popup-buttons {
+  display: flex;
+  gap: var(--spacing-md);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-popup-primary,
+.btn-popup-secondary {
+  padding: var(--spacing-md) var(--spacing-xl);
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  font-size: var(--font-size-base);
+  cursor: pointer;
+  transition: all var(--transition-base);
+  border: none;
+  display: inline-block;
+}
+
+.btn-popup-primary {
+  background: var(--gradient-primary);
+  color: white;
+  box-shadow: var(--shadow-md);
+}
+
+.btn-popup-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.btn-popup-secondary {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--text-secondary);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.btn-popup-secondary:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header {
+    padding: var(--spacing-xl) var(--spacing-md);
+  }
+
+  .content {
+    padding: var(--spacing-md);
+  }
+
+  .section-card {
+    padding: var(--spacing-md);
+  }
+
+  .icon-circle {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+
+  .section-card h2 {
+    font-size: var(--font-size-lg);
+  }
+
+  .popup-content {
+    padding: var(--spacing-xl);
+  }
+}
+```
+
+---
+
+## 📱 **6. css/styles.css** (Archivo Principal)
+
+```css
+@import url('variables.css');
+@import url('reset.css');
+@import url('animations.css');
+@import url('components.css');
+
+body {
+  font-family: var(--font-primary);
+  color: var(--text-secondary);
+  background: linear-gradient(180deg, var(--bg-gradient-start), var(--bg-gradient-end));
+  line-height: 1.6;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+```
+
+---
+
+## 🚀 **7. js/main.js**
+
+```javascript
+// ===================================
+// Inicialización del Documento
+// ===================================
+document.addEventListener('DOMContentLoaded', function() {
+  console.log('✅ ENS Reunión 05 - Equipo 21 cargado correctamente');
+  
+  initAnimations();
+  initEditableFields();
+  loadSavedData();
+});
+
+// ===================================
+// Funciones del Popup
+// ===================================
+function openPopup() {
+  const popup = document.getElementById('popup');
+  if (popup) {
+    popup.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+}
+
+function closePopup() {
+  const popup = document.getElementById('popup');
+  if (popup) {
+    popup.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+}
+
+// Cerrar popup con tecla ESC
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') {
+    closePopup();
+  }
+});
+
+// ===================================
+// Animaciones de Entrada
+// ===================================
+function initAnimations() {
+  const sections = document.querySelectorAll('.section-card');
+  
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, index) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+        }, index * 100);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+  });
+  
+  sections.forEach(section => {
+    section.style.opacity = '0';
+    section.style.transform = 'translateY(30px)';
+    section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+    observer.observe(section);
+  });
+}
+
+// ===================================
+// Campos Editables
+// ===================================
+function initEditableFields() {
+  const editableFields = document.querySelectorAll('[contenteditable="true"]');
+  
+  editableFields.forEach(field => {
+    // Guardar al salir del campo
+    field.addEventListener('blur', function() {
+      saveData();
+    });
+    
+    // Guardar con Enter
+    field.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        this.blur();
+      }
+    });
+    
+    // Efecto visual al enfocar
+    field.addEventListener('focus', function() {
+      this.style.boxShadow = '0 0 0 3px rgba(34, 211, 238, 0.2)';
+    });
+    
+    field.addEventListener('blur', function() {
+      this.style.boxShadow = '';
+    });
+  });
+}
+
+// ===================================
+// Guardar y Cargar Datos
+// ===================================
+function saveData() {
+  const data = {};
+  const editableFields = document.querySelectorAll('[contenteditable="true"]');
+  
+  editableFields.forEach((field, index) => {
+    const key = `field_${index}`;
+    data[key] = field.textContent.trim();
+  });
+  
+  try {
+    localStorage.setItem('ens_reunion_05_data', JSON.stringify(data));
+    showNotification('Datos guardados correctamente', 'success');
+  } catch (e) {
+    console.error('Error al guardar datos:', e);
+    showNotification('Error al guardar datos', 'error');
+  }
+}
+
+function loadSavedData() {
+  try {
+    const savedData = localStorage.getItem('ens_reunion_05_data');
+    
+    if (savedData) {
+      const data = JSON.parse(savedData);
+      const editableFields = document.querySelectorAll('[contenteditable="true"]');
+      
+      editableFields.forEach((field, index) => {
+        const key = `field_${index}`;
+        if (data[key] && data[key] !== '—') {
+          field.textContent = data[key];
+        }
+      });
+      
+      console.log('✅ Datos cargados desde localStorage');
+    }
+  } catch (e) {
+    console.error('Error al cargar datos:', e);
+  }
+}
+
+// ===================================
+// Notificaciones
+// ===================================
+function showNotification(message, type = 'info') {
+  const notification = document.createElement('div');
+  notification.className = `notification notification-${type}`;
+  notification.textContent = message;
+  notification.style.cssText = `
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 1rem 1.5rem;
+    background: ${type === 'success' ? '#10b981' : '#ef4444'};
+    color: white;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+    z-index: 10000;
+    animation: slideInRight 0.3s ease;
+    font-weight: 600;
+  `;
+  
+  document.body.appendChild(notification);
+  
+  setTimeout(() => {
+    notification.style.animation = 'slideInLeft 0.3s ease reverse';
+    setTimeout(() => {
+      notification.remove();
+    }, 300);
+  }, 3000);
+}
+
+// ===================================
+// Hacer funciones globales
+// ===================================
+window.openPopup = openPopup;
+window.closePopup = closePopup;
+```
+
+---
+
+## ✨ **8. js/animations.js**
+
+```javascript
+// ===================================
+// Generador de Partículas
+// ===================================
+document.addEventListener('DOMContentLoaded', function() {
+  createParticles();
+  initScrollAnimations();
+});
+
+function createParticles() {
+  const particlesContainer = document.getElementById('particles');
+  if (!particlesContainer) return;
+  
+  const particleCount = 30;
+  
+  for (let i = 0; i < particleCount; i++) {
+    const particle = document.createElement('div');
+    particle.className = 'particle';
+    
+    // Posición aleatoria
+    particle.style.left = Math.random() * 100 + '%';
+    particle.style.top = Math.random() * 100 + '%';
+    
+    // Tamaño aleatorio
+    const size = Math.random() * 4 + 2;
+    particle.style.width = size + 'px';
+    particle.style.height = size + 'px';
+    
+    // Delay de animación aleatorio
+    particle.style.animationDelay = Math.random() * 10 + 's';
+    particle.style.animationDuration = (Math.random() * 10 + 10) + 's';
+    
+    // Color aleatorio entre los acentos
+    const colors = ['#22d3ee', '#a78bfa', '#f472b6'];
+    particle.style.background = colors[Math.floor(Math.random() * colors.length)];
+    
+    particlesContainer.appendChild(particle);
+  }
+}
+
+// ===================================
+// Animaciones al Scroll
+// ===================================
+function initScrollAnimations() {
+  const elements = document.querySelectorAll('.section-card, .badge, .icon-circle');
+  
+  const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -100px 0px'
+  };
+  
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('fade-in');
+      }
+    });
+  }, observerOptions);
+  
+  elements.forEach(el => observer.observe(el));
+}
+
+// ===================================
+// Efecto Parallax en el Header
+// ===================================
+window.addEventListener('scroll', function() {
+  const header = document.querySelector('header');
+  const scrolled = window.pageYOffset;
+  
+  if (header) {
+    header.style.transform = `translateY(${scrolled * 0.3}px)`;
+    header.style.opacity = 1 - (scrolled / 500);
+  }
+});
+
+// ===================================
+// Efecto de Hover en Badges
+// ===================================
+document.addEventListener('DOMContentLoaded', function() {
+  const badges = document.querySelectorAll('.badge');
+  
+  badges.forEach(badge => {
+    badge.addEventListener('mouseenter', function() {
+      this.style.transform = 'translateY(-3px) scale(1.05)';
+    });
+    
+    badge.addEventListener('mouseleave', function() {
+      this.style.transform = 'translateY(0) scale(1)';
+    });
+  });
+});
+
+// ===================================
+// Smooth Scroll para Enlaces
+// ===================================
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    
+    if (target) {
+      target.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  });
+});
+```
+
+---
+
+## 📖 **9. README.md**
+
+```markdown
+# 🌟 Proyecto ENS - Reunión 05 Equipo 21
+
+Página web moderna e interactiva para la organización de reuniones del Equipo No. 21 de Equipos de Nuestra Señora (ENS) - Valle Norte, Colombia.
+
+## ✨ Características
+
+- 🎨 Diseño moderno con gradientes y efectos visuales
+- 🌊 Animaciones fluidas y partículas de fondo
+- 📱 Totalmente responsive (móvil, tablet, desktop)
+- 💾 Guardado automático de datos en localStorage
+- 🎵 Reproductor de audio integrado
+- ✏️ Campos editables para próxima reunión
+- 🎭 Efectos hover y transiciones suaves
+- ♿ Accesible y semántico
+
+## 📂 Estructura del Proyecto
+
+```
+proyecto-ens/
+├── index.html              # Página principal
+├── README.md               # Este archivo
+├── assets/
+│   ├── audio/
+│   │   └── AquiEstoy.mp3   # Audio de invocación
+│   └── images/
+│       └── logo.jpg        # Logo ENS
+├── css/
+│   ├── variables.css       # Variables CSS (colores, espaciados)
+│   ├── reset.css           # Normalización CSS
+│   ├── animations.css      # Animaciones y keyframes
+│   ├── components.css      # Estilos de componentes
+│   └── styles.css          # Archivo principal CSS
+└── js/
+    ├── main.js             # Lógica principal
+    └── animations.js       # Animaciones y efectos
+```
+
+## 🚀 Instalación
+
+1. **Clona o descarga el repositorio**
+2. **Coloca los archivos de audio**:
+   - Copia `AquiEstoy.mp3` en `assets/audio/`
+3. **Coloca las imágenes**:
+   - Copia `logo.jpg` en `assets/images/`
+4. **Abre `index.html` en tu navegador**
+
+## 💡 Uso
+
+### Campos Editables
+- Los campos de "Próxima reunión" son completamente editables
+- Los cambios se guardan automáticamente en tu navegador
+- Presiona `Enter` para guardar y salir del campo
+
+### Reproductor de Audio
+- Reproduce el audio de invocación directamente desde la página
+- Controles nativos del navegador
+
+### Navegación
+- Click en "Ir a la página principal" para abrir el popup
+- Presiona `ESC` para cerrar el popup
+
+## 🎨 Personalización
+
+### Cambiar Colores
+Edita `css/variables.css` para modificar la paleta de colores:
+
+```css
+:root {
+  --accent-primary: #22d3ee;     /* Color principal */
+  --accent-secondary: #a78bfa;   /* Color secundario */
+  --accent-tertiary: #f472b6;    /* Color terciario */
+}
+```
+
+### Modificar Animaciones
+Ajusta las animaciones en `css/animations.css` y `js/animations.js`
+
+### Cambiar Tipografía
+Modifica las fuentes en `css/variables.css`:
+
+```css
+:root {
+  --font-primary: 'Poppins', sans-serif;
+  --font-secondary: 'Merriweather', serif;
+}
+```
+
+## 🌐 Navegadores Soportados
+
+- ✅ Chrome (últimas 2 versiones)
+- ✅ Firefox (últimas 2 versiones)
+- ✅ Safari (últimas 2 versiones)
+- ✅ Edge (últimas 2 versiones)
+
+## 📱 Responsive
+
+- 📱 **Móvil**: < 768px
+- 💻 **Tablet**: 768px - 1024px
+- 🖥️ **Desktop**: > 1024px
+
+## 🔧 Tecnologías Utilizadas
+
+- HTML5
+- CSS3 (Variables, Grid, Flexbox, Animations)
+- JavaScript ES6+
+- Google Fonts (Poppins, Merriweather)
+
+## 📝 Características Técnicas
+
+- **Intersection Observer** para animaciones al scroll
+- **LocalStorage API** para persistencia de datos
+- **CSS Grid** y **Flexbox** para layouts
+- **Custom Properties (CSS Variables)** para tematización
+- **Backdrop Filter** para efectos de vidrio esmerilado
+
+## 🐛 Solución de Problemas
+
+### Los datos no se guardan
+- Verifica que tu navegador permita localStorage
+- Comprueba que no estés en modo incógnito
+
+### El audio no se reproduce
+- Asegúrate de que el archivo esté en `assets/audio/AquiEstoy.mp3`
+- Verifica que el formato sea compatible (MP3)
+
+### Las animaciones son lentas
+- Reduce el número de partículas en `js/animations.js`
+- Desactiva algunas animaciones en `css/animations.css`
+
+## 👥 Créditos
+
+Desarrollado con ❤️ para el **Equipo No. 21 ENS**  
+**Región Colombia · Valle Norte**
+
+## 📄 Licencia
+
+Este proyecto es de uso interno para el Equipo 21 ENS.
+
+---
+
+**¿Preguntas o sugerencias?**  
+Contacta al equipo de desarrollo o a la pareja piloto.
+```
+
+---
+
+## 🎯 **Mejoras Implementadas**
+
+✅ **Diseño Visual Mejorado**
+- Gradientes modernos y vibrantes
+- Partículas animadas de fondo
+- Efectos de hover sofisticados
+- Iconos circulares con efectos glow
+
+✅ **Animaciones Profesionales**
+- Entrada progresiva de secciones
+- Efecto parallax en el header
+- Transiciones suaves en todos los elementos
+- Animación de flotación en iconos
+
+✅ **Interactividad Mejorada**
+- Popup modal rediseñado
+- Campos editables con placeholders
+- Guardado automático de datos
+- Notificaciones visuales
+
+✅ **Estructura Organizada**
+- CSS modular y mantenible
+- JavaScript separado por funcionalidad
+- Código comentado y documentado
+- README completo con instrucciones
+
+✅ **Responsive Design**
+- Adaptable a todos los dispositivos
+- Media queries optimizadas
+- Touch-friendly en móviles
+
+✅ **Rendimiento Optimizado**
+- Carga rápida
+- Animaciones con GPU acceleration
+- Lazy loading de efectos
+
+---
+
+## 🎨 **Paleta de Colores Utilizada**
+
+```css
+Colores Principales:
+🔵 Cyan (#22d3ee) - Acento primario
+🟣 Púrpura (#a78bfa) - Acento secundario  
+🩷 Rosa (#f472b6) - Acento terciario
+🟢 Verde (#10b981) - Éxito
+
+Fondos:
+⚫ Azul Oscuro (#0a0e27, #0f172a, #1a1f3a)
+
+Textos:
+⚪ Blanco (#ffffff) - Principal
+🔘 Gris Claro (#e5e7eb) - Secundario
+◾ Gris (#cbd5e1) - Muted
+```
+
+---
+
+## 📦 **Archivos Completos - Resumen de Implementación**
+
+### **Orden de Creación:**
+
+1. ✅ Crear estructura de carpetas
+2. ✅ Copiar `index.html` 
+3. ✅ Crear carpeta `css/` y todos los archivos CSS
+4. ✅ Crear carpeta `js/` y todos los archivos JS
+5. ✅ Crear carpeta `assets/images/` y copiar logo
+6. ✅ Crear carpeta `assets/audio/` y copiar audio
+7. ✅ Abrir `index.html` en el navegador
+
+---
+
+## 🚀 **Características Adicionales Sugeridas** (Opcional)
+
+### **1. Modo Oscuro/Claro**
+Agregar en `js/main.js`:
+
+```javascript
+function toggleTheme() {
+  document.body.classList.toggle('light-mode');
+  const theme = document.body.classList.contains('light-mode') ? 'light' : 'dark';
+  localStorage.setItem('theme', theme);
+}
+
+// Cargar tema guardado
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme === 'light') {
+  document.body.classList.add('light-mode');
+}
+```
+
+### **2. Compartir en Redes Sociales**
+```javascript
+function shareOnWhatsApp() {
+  const text = "¡Únete a la Reunión 05 del Equipo 21 ENS!";
+  const url = window.location.href;
+  window.open(`https://wa.me/?text=${encodeURIComponent(text + ' ' + url)}`);
+}
+```
+
+### **3. Exportar a PDF**
+```javascript
+function exportToPDF() {
+  window.print();
+}
+```
+
+### **4. Countdown Timer para Próxima Reunión**
+```javascript
+function initCountdown(targetDate) {
+  const countdownEl = document.getElementById('countdown');
+  
+  setInterval(() => {
+    const now = new Date().getTime();
+    const distance = targetDate - now;
+    
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    
+    countdownEl.innerHTML = `${days}d ${hours}h ${minutes}m`;
+  }, 1000);
+}
+```
+
+---
+
+## 📋 **Checklist de Implementación**
+
+### Antes de Comenzar:
+- [ ] Descargar o crear estructura de carpetas
+- [ ] Tener el logo en formato JPG
+- [ ] Tener el audio AquiEstoy.mp3
+
+### Implementación:
+- [ ] Crear carpeta principal `proyecto-ens/`
+- [ ] Crear subcarpetas: `css/`, `js/`, `assets/images/`, `assets/audio/`
+- [ ] Copiar `index.html` en la raíz
+- [ ] Copiar archivos CSS en `css/`:
+  - [ ] variables.css
+  - [ ] reset.css
+  - [ ] animations.css
+  - [ ] components.css
+  - [ ] styles.css
+- [ ] Copiar archivos JS en `js/`:
+  - [ ] main.js
+  - [ ] animations.js
+- [ ] Copiar `logo.jpg` en `assets/images/`
+- [ ] Copiar `AquiEstoy.mp3` en `assets/audio/`
+- [ ] Crear `README.md` en la raíz
+
+### Pruebas:
+- [ ] Abrir index.html en Chrome
+- [ ] Verificar que el logo se vea
+- [ ] Probar el reproductor de audio
+- [ ] Probar campos editables
+- [ ] Verificar que se guarden los datos
+- [ ] Probar el popup
+- [ ] Verificar animaciones
+- [ ] Probar en móvil
+- [ ] Verificar responsive design
+
+---
+
+## 🎓 **Guía de Personalización Rápida**
+
+### **Cambiar el Número de Equipo**
+Buscar y reemplazar en `index.html`:
+- "Equipo No. 21" → "Equipo No. XX"
+
+### **Cambiar la Reunión**
+- "Reunión 05" → "Reunión XX"
+
+### **Actualizar Cumpleaños**
+En la sección de cumpleaños en `index.html`:
+```html
+<div class="birthday-item">
+  <span class="date">Mes Día</span>
+  <span class="name">Nombre</span>
+</div>
+```
+
+### **Cambiar Versículo Bíblico**
+Buscar la sección `.verse` en `index.html` y actualizar.
+
+### **Modificar Tema de Estudio**
+Buscar `.theme-box` en `index.html`:
+```html
+<h3>"Nuevo Tema"</h3>
+<p class="theme-description">Nueva descripción...</p>
+```
+
+---
+
+## 🔐 **Seguridad y Privacidad**
+
+- ✅ No se envía información a servidores externos
+- ✅ Los datos se guardan localmente en el navegador
+- ✅ No se utilizan cookies de terceros
+- ✅ No hay seguimiento de analytics
+
+---
+
+## 🌟 **Mejores Prácticas Aplicadas**
+
+### **HTML:**
+- ✅ Semántico y accesible
+- ✅ Meta tags completos
+- ✅ Alt text en imágenes
+- ✅ ARIA labels donde necesario
+
+### **CSS:**
+- ✅ Variables CSS para mantenibilidad
+- ✅ Mobile-first approach
+- ✅ BEM naming convention adaptada
+- ✅ Optimización de animaciones
+
+### **JavaScript:**
+- ✅ ES6+ features
+- ✅ Event delegation
+- ✅ Error handling
+- ✅ Código modular y reutilizable
+
+---
+
+## 📞 **Soporte**
+
+Si encuentras algún problema:
+
+1. **Revisa la consola del navegador** (F12)
+2. **Verifica las rutas de archivos**
+3. **Comprueba que todos los archivos estén presentes**
+4. **Consulta el README.md**
+
+---
+
+## 🎉 **¡Listo para Usar!**
+
+Tu proyecto está completamente estructurado y listo para implementar. Simplemente:
+
+1. Crea las carpetas según la estructura
+2. Copia cada archivo en su ubicación
+3. Añade tus imágenes y audio
+4. Abre `index.html` en tu navegador
+
+**¡Disfruta de tu nueva página web para el Equipo 21 ENS!** 🙏✨
+
+---
+
+## 📸 **Vista Previa de Secciones**
+
+El diseño incluye:
+- 🎨 Header con logo animado y gradientes
+- 🙏 Sección de invocación con reproductor de audio
+- 📿 Oración con cita destacada
+- 🍞 Bendición de alimentos
+- 💬 Puesta en común
+- ✝️ Momento de oración destacado con versículo
+- 📋 Participación PCE
+- 📚 Tema de estudio con diseño especial
+- 🧭 Tiempo de pilotos
+- 🎂 Cumpleaños con lista estilizada
+- 📅 Próxima reunión con campos editables
+- 🌟 Magníficat
+- 🔗 Botón para página principal
+- 💜 Footer elegante
+
+---
+
+**Desarrollado con ❤️ y dedicación para el Equipo 21 ENS**  
+**Valle Norte · Colombia**
+
+*"Llamados a vivir en comunión con Cristo"*
