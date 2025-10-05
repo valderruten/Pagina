@@ -39,6 +39,7 @@
         </div>
         <div class="kicker">✨ Región Colombia · Valle Norte ✨</div>
         <h1>Sector B Tuluá – Valle<br><span class="highlight">Reunión 05</span></h1>
+        <H2>OBJETIVO:<br><span class="highlight">MOSTRAR QUE A LOS ENS SE VIENE COMO RESPUESTA A UNA LLAMADA PERSONAL DE DIOS</span></H2>
         <div class="meta">
           <span class="badge badge-primary">Equipo No. 21 ENS</span>
           <span class="badge badge-secondary">Llamados a vivir en comunión con Cristo</span>
@@ -46,7 +47,7 @@
       </header>
 
       <div class="content">
-        <!-- Sección Lugar de nuestra reunión -->
+        
 <!-- Sección Lugar de nuestra reunión -->
 <section class="section-card hover-lift">
   <div class="section-header">
@@ -72,7 +73,8 @@
       style="border:0; border-radius: 12px;"
       allowfullscreen=""
       loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade">
+      referrerpolicy="no-referrer-when-downgrade"
+      title="Mapa de ubicación de la reunión en Tres Esquinas, Tuluá, Valle del Cauca, Colombia">
     </iframe>
   </div>
 </section>
@@ -85,12 +87,42 @@
             <h2>Invocación</h2>
           </div>
           <p class="section-description"><em>Ponerse en presencia de Dios.</em></p>
-          <div class="audio-player">
-            <audio controls src="assets/audio/AquiEstoy.mp3">
-              Tu navegador no soporta el elemento de audio.
-            </audio>
-          </div>
+         <div class="audio-player">
+  <audio id="audioCancion" controls src="assets/audio/AquiEstoy.mp3">
+    Tu navegador no soporta el elemento de audio.
+  </audio>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const audio = document.getElementById("audioCancion");
+  let letraAbierta = false;
+
+  // Detecta clic en cualquier parte del reproductor
+  audio.addEventListener("play", () => {
+    if (!letraAbierta) {
+      const ventanaLetra = window.open("letra-cancion.html", "_blank", "width=600,height=800");
+      letraAbierta = true;
+    }
+  });
+});
+</script>
+
         </section>
+        <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const audio = document.getElementById("audioCancion");
+    if (audio) {
+      audio.addEventListener("play", () => {
+        // Abre la letra solo una vez al iniciar la reproducción
+        if (!window._letraAbierta) {
+          window._letraAbierta = true;
+          window.open("letra-cancion.html", "_blank", "width=600,height=800");
+        }
+      });
+    }
+  });
+</script>
 
         <!-- Oración -->
         <section class="section-card hover-lift">
@@ -145,7 +177,7 @@
 
   <ol class="agenda">
     <li>
-      <strong>Texto de meditación:</strong> 
+      <strong>Texto de meditación: (Juan 15, 15–17)</strong> 
       <p class="meditacion-texto">
         “No os llamo ya siervos, porque el siervo no sabe lo que hace su amo; 
         a vosotros os he llamado amigos, porque todo lo que he oído a mi Padre 
@@ -155,7 +187,7 @@
         de modo que todo lo que pidáis al Padre en mi nombre os lo conceda.  
         Lo que os mando es que os améis los unos a los otros.”
       </p>
-      <span class="verse-ref">(Juan 15, 15–17)</span>
+      
     </li>
 
     <li><strong>Oración comunitaria:</strong> Oración libre y voluntaria (petición de fe).</li>
